@@ -1,0 +1,1785 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+
+   
+   <!-- Include Cloud Zoom CSS -->
+   <link href="css/cloudzoom.css" type="text/css" rel="stylesheet" />
+   
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css"> -->
+
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
+    <title> K&R STORE </title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="images/spinner.gif" class="img-fluid">
+    </div>
+
+
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 service-large">
+                        <div class="right-item">
+                            <ul class="links-service">
+                                <li><a href="#"> <i class="fa fa-dollar"></i> الدفع عند الإستلام </a></li>
+                                <li><a href="#"> <i class="fa fa-check-circle"></i> منتجات موثوقة </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="left-item">
+                            <ul class="user-links">
+                                <li class="main-li flag">
+                                    <a>
+                                        <img src="images/255px-Flag_of_Egypt.svg.png" alt="France" />
+                                    </a>
+                                </li>
+                                <li class="main-li">
+                                    <a href="#">
+                                       English
+                                    </a>
+                                </li>
+                                <li class="main-li">
+                                    <a href="faq.html">
+                                        مركز المساعدة
+                                    </a>
+                                </li>
+                                <li class="main-li login-dropdown">
+                                    <a class="drop">
+                                        <i class="fa fa-power-off"></i>
+                                        تسجيل الدخول
+                                    </a>
+                                    <ul class="dropdown">
+                                        <li><a href="login.html">تسجيل الدخول</a></li>
+                                        <li><a href="login.html">حساب جديد</a></li>
+                                        <li><a href="marketer.html">تسويق</a></li>
+                                        <li><a href="account_products.html">مشترياتى</a></li>
+                                        <li><a href="account_favorite.html">القوائم المفضلة </a></li>
+                                        <li><a href="account_setting.html">أعداد الحساب </a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="middle-header text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-sm-3 col-7 large-logo">
+                        <div class="logo">
+                        <a href="index.html"> <span>K&R</span> STORE</a>    
+                        </div>
+
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-12">
+                        <form action="">
+                            <div class="search-box">
+                                <div class="filter-box">
+                                    <span id="result"> الأقسام </span>
+                                </div>
+                                <input type="text" placeholder="ما الذى تحتاجه ؟ ">
+                                <button class="btn-search" type="submit"> <i class="icofont-search"></i> </button>
+                            </div>
+                            <div class="search-categ">
+                                <div class="head">
+                                    <div> أختار القسم </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <p> <input type="checkbox" id="1" value="ملابس" onclick="myCatSelect(this)">
+                                            ملابس رجالى </p>
+                                    </li>
+                                    <li>
+                                        <p> <input type="checkbox" id="2" value="اكسسوارات" onclick="myCatSelect(this)">
+                                            اكسسوارات موبايل </p>
+                                    </li>
+                                    <li>
+                                        <p> <input type="checkbox" id="3" value="أدوات منزلية "
+                                                onclick="myCatSelect(this)">
+                                            أدوات منزلية </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-2 large-items">
+                        <div class="login-header">
+                        <a href="login.html">
+                            <img src="images/login.png" alt="">
+                        </a>
+                        </div>
+                        <div class="save-products">
+                            <a href="account_favorite.html">
+                            <img src="images/heart.png" alt="">
+                            <span class="badge badge-primary">3</span> 
+                              </a>
+                        </div>
+                       
+                        <div class="cart-header">
+                            <img src="images/cart.png" alt="">
+                            <span class="badge badge-primary">7</span> 
+                            <span class="cart-text">عربـة التسوق</span> 
+                        </div>
+                       
+                        <div class="cart-dropdown">
+                            <div class="top-info">
+                                <div class="counts"> منتــج ( 3 )<span class="close"> <i class="icofont-close-line"></i>
+                                    </span> </div>
+                                <p> <label> المجموع الكلى للعربــة : </label> 200,00 جنيــه </p>
+                                <a class="btn-orange" href="checkout.html"> متابعة الشراء </a>
+                            </div>
+
+                            <div class="dropdown-items">
+                                <div class="item-box">
+                                    <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                    <div class="data">
+                                        <a class="descr" href="#"> خصم 20 % - موبايل ايفون 7 - إصدار جديد من شركــة
+                                            أبل</a>
+                                        <h3> 7000 جنيــه </h3>
+                                        <div class="item-footer">
+                                            <p> الكميـة : <input type="text" value="1"> </p>
+                                            <div class="actions">
+                                                <a data-toggle="modal" data-target="#delete-modal">
+                                                    <i class="icofont-ui-delete"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-box">
+                                    <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                    <div class="data">
+                                        <a class="descr" href="#"> فريد من نوعه خصم 20 % - موبايل ايفون 7 - إصدار جديد
+                                        </a>
+                                        <h3> 7000 جنيــه </h3>
+                                        <div class="item-footer">
+                                            <p> الكميـة : <input type="text" value="1"> </p>
+                                            <div class="actions">
+                                                <a data-toggle="modal" data-target="#delete-modal">
+                                                    <i class="icofont-ui-delete"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bottom-info">
+                                <a class="btn-orange" href="cart.html"> عرض وتعديل العربة </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light large-nav">
+            <div class="container">
+                <div class="btn-menu">
+                    <i class="fa fa-bars"></i>
+                    <span class="navbar-brand"> كـل الفئــات </span>
+                </div>
+                <div class="site-menu">
+                    <div class="main-list">
+                        <ul class="main-ul fixed-height">
+                            <li class="main-list-li">
+                                <a class="main-a" href="#">
+                                    <span class="cat-icon"> <i class="icofont-smart-phone"></i>
+                                    </span>  أكسسوارات موبايل  </span>
+                                </a>
+                                <div class="cat-popup-list" >
+                                    <div class="menue-block">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="brands">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand1.png" > </a> </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand2.png" > </a> </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand3.png" > </a> </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand4.png" > </a> </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand5.png" > </a> </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="item"> <a href="#"> <img src="images/brand6.png" > </a> </div>
+                                                        </div>
+                                                 </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="item-branch">
+                                                            <h3>شواحن</h3>
+                                                            <ul>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="item-branch">
+                                                            <h3>اكسسوارات</h3>
+                                                            <ul>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="item-branch">
+                                                            <h3>سماعات</h3>
+                                                            <ul>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="item-branch">
+                                                            <h3>ساعات</h3>
+                                                            <ul>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                                <li> <a href="#"> شاحن موبايل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-list-li">
+                                <a class="main-a" href="#">
+                                    <span class="cat-icon"> <i class="icofont-man-in-glasses"></i> </span>
+                                    <span> ملابس رجالى </span>
+                                </a>
+                                <div class="cat-popup-list">
+                                    <div class="menue-block">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="item-branch">
+                                                    <h3>قميص</h3>
+                                                    <ul>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="item-branch">
+                                                    <h3>بنطلون</h3>
+                                                    <ul>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="item-branch">
+                                                    <h3>تيشيرت</h3>
+                                                    <ul>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="item-branch">
+                                                    <h3>جاكت</h3>
+                                                    <ul>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                        <li> <a href="#">قميص رجالى </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-list-li">
+                                <a class="main-a" href="#">
+                                    <span class="cat-icon"> <i class="icofont-home"></i>
+                                    </span> الأدوات المنزلية </span>
+                                </a>
+                                <div class="cat-popup-list" >
+                                    <div class="menue-block">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="item-branch">
+                                                            <h3>المطبخ</h3>
+                                                            <ul>
+                                                                <li> <a href="#"> ادوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="item-branch">
+                                                            <h3>الحمام</h3>
+                                                            <ul>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="item-branch">
+                                                            <h3>الأنواع</h3>
+                                                            <ul>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                                <li> <a href="#">أدوات منزل </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <img  class="tool-images" src="images/toolimg.png" alt="">
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">ملابس رجالى</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">أدوات منزليه </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html"> أكسسوارات موبايل </a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light small-nav" >
+           
+            <a class="navbar-brand navbar-brand-small">
+                    <i class="fa fa-bars"></i>
+                    <span class="navbar-brand"> K&R STORE  </span>
+            </a>
+            <div class="collapse navbar-collapse" id=" navbar-collapse">
+                <div class="collapse-header">
+                    <h3>كل الفئـــات</h3>
+                    <i class="fa fa-close" id="fa-close-menu"></i>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">ملابس رجالى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">أدوات منزليه </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html"> أكسسوارات موبايل </a>
+                    </li>
+                </ul> 
+              
+            
+            </div>
+            <div class="links-small">
+                <div class="login-header">
+                    <a href="login.html">
+                        <img src="images/login.png" alt="">
+                    </a>
+                    </div>
+                    <div class="cart-header">
+                        <img src="images/cart.png" alt="">
+                        <span class="badge badge-primary">7</span> 
+                    </div>
+                   
+                    <div class="cart-menu">
+                        <div class="top-info">
+                            <div class="counts"> منتــج ( 3 )<span class="close"> <i class="icofont-close-line" id="cart-menu-close"></i>
+                                </span> </div>
+                            <p> <label> المجموع الكلى للعربــة : </label> 200,00 جنيــه </p>
+                            <a class="btn-orange" href="checkout.html"> متابعة الشراء </a>
+                        </div>
+
+                        <div class="dropdown-items">
+                            <div class="item-box">
+                                <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                <div class="data">
+                                    <a class="descr" href="#"> خصم 20 % - موبايل ايفون 7 - إصدار جديد من شركــة
+                                        أبل</a>
+                                    <h3> 7000 جنيــه </h3>
+                                    <div class="item-footer">
+                                        <p> الكميـة : <input type="text" value="1"> </p>
+                                        <div class="actions">
+                                            <a data-toggle="modal" data-target="#delete-modal">
+                                                <i class="icofont-ui-delete"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-box">
+                                <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                <div class="data">
+                                    <a class="descr" href="#"> فريد من نوعه خصم 20 % - موبايل ايفون 7 - إصدار جديد
+                                    </a>
+                                    <h3> 7000 جنيــه </h3>
+                                    <div class="item-footer">
+                                        <p> الكميـة : <input type="text" value="1"> </p>
+                                        <div class="actions">
+                                            <a data-toggle="modal" data-target="#delete-modal">
+                                                <i class="icofont-ui-delete"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-box">
+                                <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                <div class="data">
+                                    <a class="descr" href="#"> فريد من نوعه خصم 20 % - موبايل ايفون 7 - إصدار جديد
+                                    </a>
+                                    <h3> 7000 جنيــه </h3>
+                                    <div class="item-footer">
+                                        <p> الكميـة : <input type="text" value="1"> </p>
+                                        <div class="actions">
+                                            <a data-toggle="modal" data-target="#delete-modal">
+                                                <i class="icofont-ui-delete"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-box">
+                                <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                <div class="data">
+                                    <a class="descr" href="#"> فريد من نوعه خصم 20 % - موبايل ايفون 7 - إصدار جديد
+                                    </a>
+                                    <h3> 7000 جنيــه </h3>
+                                    <div class="item-footer">
+                                        <p> الكميـة : <input type="text" value="1"> </p>
+                                        <div class="actions">
+                                            <a data-toggle="modal" data-target="#delete-modal">
+                                                <i class="icofont-ui-delete"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-box">
+                                <img src="images/phone-2.jpg" alt="prod" class="img-fluid">
+                                <div class="data">
+                                    <a class="descr" href="#"> فريد من نوعه خصم 20 % - موبايل ايفون 7 - إصدار جديد
+                                    </a>
+                                    <h3> 7000 جنيــه </h3>
+                                    <div class="item-footer">
+                                        <p> الكميـة : <input type="text" value="1"> </p>
+                                        <div class="actions">
+                                            <a data-toggle="modal" data-target="#delete-modal">
+                                                <i class="icofont-ui-delete"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bottom-info">
+                            <a class="btn-orange" href="cart.html"> عرض وتعديل العربة </a>
+                        </div>
+                    </div>
+                </div> 
+               
+          </nav>
+    </header>
+
+    <div class="main-slider">
+        <div class="owl-carousel owl-theme main-owl">
+            <div class="item">
+                <div class="overlay"></div>
+                <img src="images/maxresdefault.jpg" alt="slider" class="img-fluid">
+                <div class="item-text">
+                    <p> الأن فى K&R STORE </p>
+                    <h2> أدوات  <span> موبايل  </span> تجعل هاتفك أعظم  </h2>
+                    <!-- <h5> For All Collections 2018 - 2019 </h5> -->
+                    <a href="#" class="btn"> تسوق الأن </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="overlay"></div>
+                <img src="images/maxresdefault (2).jpg" alt="slider" class="img-fluid">
+                <div class="item-text">
+                    <p  class="fadeInDown">  الأن فى K&R STORE </p>
+                    <h2 class="fadeIn"> افضل  <span> ملابس رجالى  </span> تجعلك تتألق بمظهرك  </h2>
+                    <!-- <h5 class="fadeIn"> For All Collections 2018 - 2019 </h5> -->
+                    <a  class="fadeInUp" href="#" class="btn"> تسوق الأن </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="overlay"></div>
+                <img src="images/8919.jpg" alt="slider" class="img-fluid">
+                <div class="item-text">
+                    <p  class="fadeInDown">  الأن فى K&R STORE </p>
+                    <h2 class="fadeIn"> أدوات  <span>  منزلية</span> مهمة جدا لمنزلك  </h2>
+                    <!-- <h5 class="fadeIn"> For All Collections 2018 - 2019 </h5> -->
+                    <a  class="fadeInUp" href="#" class="btn"> تسوق الأن </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ملابس رجالى -->
+    <section class="feature-product">
+        <div class="container">
+          <h2> ملابس رجالى مقترحة لك </h2>
+            <div class="content">
+                <div class="tab_content active" id="tab_content_1">
+                    <div class="owl-carousel owl-theme tabcontent-owl">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t1.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات uhui   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle" > <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t2.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t3.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t4.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t5.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/t6.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        من افضل الخامات   100٪ أصيل أعلى جودة متاح جاكيت اسود اشترى الان
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- اكسسوارت -->
+
+    <section class="feature-product">
+        <div class="container">
+            <h2>أكسسوارات موبايل مقترحة لك</h2>
+            <div class="content">
+                <div class="tab_content active" id="tab_content_1">
+                    <div class="owl-carousel owl-theme tabcontent-owl">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb1.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb2.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb3.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb4.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb5.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/mb6.jpeg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        MTC شاحن موبايل من ام تى سى 1 مخرج وكابل يو اس بي
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="week-offer">
+        <div class="container">
+            <h2>افضل العروض الأسبوعية </h2>
+            <div class="row">
+                <div class="col-md-6 offer-banner3-padding">
+                    <div class="offer-banner3">
+                      <div class="offer-banner3-inner"><a href="#"><img src="images/25f81cd0-80d8-11ea-afff-c78a15416aa3.jpg" alt=""></a>
+                        <div class="hover_content">
+                          <div class="hover_data">
+                            <div class="title"> ساعات ذكية </div>
+                            <div class="desc-text"> ساعات اصلية بسعر أقل</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <div class="offer-banner1"><a href="#"><img src="images/of2.jpeg" alt=""></a>
+                    <div class="hover_content">
+                      <div class="hover_data">
+                        <div class="title"> أدوات منزلية </div>
+                        <div class="desc-text">  شاهد أفضل السلع  </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offer-banner2"><a href="#"><img src="images/mens-polo-t-shirts-500x500.jpg" alt=""></a>
+                    <div class="hover_content">
+                      <div class="hover_data">
+                        <div class="title">تشيرت رجالى </div>
+                        <div class="desc-text"> خصومات تصل الى 40% </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+        </div>
+    </section>
+
+    <!-- ادوات منزلية -->
+
+    <section class="feature-product">
+        <div class="container">
+           <h2>أدوات منزلية مقترحة لك</h2>
+            <div class="content">
+                <div class="tab_content active" id="tab_content_1">
+                    <div class="owl-carousel owl-theme tabcontent-owl">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h8.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h5.png" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h6.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h7.jpg" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h4.png" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <!-- <span > نظرة سريعة  </span> -->
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icofont-cart-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                        </li>
+                                        <li class="quick-view">
+                                            <a class="show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal"> <i
+                                                    class="icofont-eye-alt"></i> <span> </span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="view_product.html"> <i class="icofont-link-broken"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="mix marketing planning">
+                                        <figure class="effect-layla">
+                                            <img src="images/h3.png" alt="product" class="img-fluid">
+                                            <a class="quick-view show-product-modal" data-toggle="modal"
+                                                data-target="#product-modal">
+                                                <figcaption>
+                                                    <div class="actions">
+                                                        <span> نظرة سريعة </span>
+                                                    </div>
+                                                </figcaption>
+                                            </a>
+                                        </figure>
+                                </div>
+                                <div class="product-title">
+                                    <a href="view_product.html">
+                                        طقم قدور – 12 قطع برونزي VETRO – ALSAIF
+                                    </a>
+                                </div>
+                                <div class="salary"> 130 جنية </div>
+
+                                <ul>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star select "></i> </li>
+                                    <li> <i class="icofont-star select"></i> </li>
+                                    <li> <i class="icofont-star"></i> </li>
+                                </ul>
+                                <div class="item-links">
+                                    <a href="#">
+                                        <i class="icofont-cart-alt"></i>
+                                    </a>
+                                    <a class="liketoggle"> <i class="icofont-heart"></i> </a>
+                                    <span class="won"> اربح 10 %</span>
+                                </div>
+                                <span class="re-ribbon-badge left-badge badge_3"><span>متوفر
+                                        جملة</span></span>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- أفضل العروض -->
+    <section class="category text-center">
+        <div class="container">
+            <h2>أفضل العروض</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/h1.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> قطـع برونزى</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/mb3.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> شاحن موبايل  </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/mb5.jpg" alt="product" class="img-fluid"> </a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> سماعات موبايل  </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                          <a href="#">  <img src="images/t3.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> تيشيرت رجالى   </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/t7.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> قميص رجالى   </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/mb3.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> شاحن موبايل  </span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/mb5.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> سماعات موبايل  </span></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <div class="item">
+                        <div class="offer-card">
+                            <a href="#">  <img src="images/t3.jpg" alt="product" class="img-fluid"></a>
+                            <span class="re-ribbon-badge left-badge badge_3"><span> تيشيرت رجالى    </span></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+           
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="ebusiness">
+                        <h2><span>K&R </span> STORE</h2>
+                        <p>
+                            نحن شركة تسويق تتيح لك الفرصه بالتسوق بكل امان وثقه بنتعامل مع اكثر من 30000 عميل عبر
+                            الانترنت .. الان تمتع بالتسوق
+                        </p>
+                        <ul>
+                            <li><a href="#!"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#!"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#!"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#!"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="info ">
+                        <h4>التواصل معنا </h4>
+                        <p>
+                            يمكنك الان الاتصال السريع اذا وجهت مشكله اثناء الشراء
+                        </p>
+                        <div class="personal">
+                            <p> <span>موبايل :</span> +123 456 789 </p>
+                            <p><span>الإيميل :</span> contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class=" insta">
+                        <h4>الاقسام </h4>
+                        <div class="category">
+                            <a href="#"> تيشيرت رجالى </a>
+                            <a href="#"> قميص رجالى </a>
+                            <a href="#"> بنطلون رجالى </a>
+                            <a href="#"> بنطلون رجالى </a>
+                        </div>
+                        <div class="category">
+                            <a href="#"> شاحن موبايل </a>
+                            <a href="#"> سماعه موبايل </a>
+                            <a href="#"> ادوات موبايل </a>
+                            <a href="#"> ادوات موبايل </a>
+                        </div>
+                        <div class="category">
+                            <a href="#"> ادوات منزليه </a>
+                            <a href="#"> ادوات منزليه </a>
+                            <a href="#"> ادوات منزليه </a>
+                            <a href="#"> ادوات منزليه </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p> <a href="policy.html"> سياسة الخصوصية </a> <strong> K&R Store </strong> &copy;جميع الحقوق محفوظة.</p>
+    </div>
+
+
+    <!-- PRODUCT DETAILS  MODAL  -->
+    <div class="modal fade" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div id="zoomOn">
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-5">
+                                <div id="surround">
+                                    
+                                    <img class="cloudzoom" alt ="Cloud Zoom small image" id ="zoom1" src="images/t2.jpg"
+                                    data-cloudzoom='
+                                        zoomPosition :"#zoomOn"      
+                                    '>
+                                    <!-- zoomPosition: "inside",
+                                    autoInside: true    -->
+                                    <div id="slider1">
+                                        <ul class="owl-carousel owl-theme brands-owl">
+                                            <li><img class='cloudzoom-gallery' src="images/t1.jpg" 
+                                                    data-cloudzoom ="useZoom:'.cloudzoom', image:'images/t1.jpg' "></li>
+
+                                            <li><img class='cloudzoom-gallery' src="images/t2.jpg" 
+                                                    data-cloudzoom ="useZoom:'.cloudzoom', image:'images/t2.jpg' "></li>
+
+                                            <li><img class='cloudzoom-gallery' src="images/t3.jpg" 
+                                                    data-cloudzoom ="useZoom:'.cloudzoom', image:'images/t3.jpg' "></li>
+
+                                            <li><img class='cloudzoom-gallery' src="images/t4.jpg" 
+                                                    data-cloudzoom ="useZoom:'.cloudzoom', image:'images/t4.jpg' "></li>
+
+                                            <li><img class='cloudzoom-gallery' src="images/t5.jpg" 
+                                                    data-cloudzoom ="useZoom:'.cloudzoom', image:'images/t5.jpg' "></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-7">
+                                <div class="product-details">
+                                    <h3> قميص رجالى خامة قطن </h3>
+                                    <p> السعر : <span> 150 جنية </span> </p>
+                                    <p> الكمية المتاحة : <span> 20 </span> </p>
+                                    <span> المقاس : </span>
+                                    <div class="items-size">
+                                            <a href=""><div > XXL </div></a>
+                                            <a href=""><div  > XL </div></a>
+                                            <a href=""><div  > L </div></a>
+                                            <a href=""><div > M </div></a>
+                                            <a href=""><div > S </div></a>
+                                    </div>
+                                        <br>
+                                    <span> اللون : </span>
+                                       <div class="items-color">
+                                               <a href=""><div style="--item-color:red"></div></a>
+                                               <a href=""><div  style="--item-color:blue"></div></a>
+                                               <a href=""><div  style="--item-color:yellow"></div></a>
+                                               <a href=""><div style="--item-color:green"></div></a>
+                                               <a href=""><div  style="--item-color:orange"></div></a>
+                                       </div>
+
+                                 <br>
+                                       <span> الوصف : </span>
+                                    <ul>
+                                        <li> قميص رجالى خامة قطن 100 % يمكن الان الشراء </li>
+                                        <li>  اقل ثمن من السوق ويوجد له كثير من الالوان</li>
+                                        <li>  اقل ثمن من السوق ويوجد له كثير من الالوان</li>
+                                        <li>  اقل ثمن من السوق ويوجد له كثير من الالوان</li>
+                                    </ul>
+
+                                    <div class="actions">
+                                        <div class="counter shrink">
+                                            <button class="btn plus"> <i class="icofont-plus"></i> </button>
+                                            <button class="btn minus"> <i class="icofont-minus"></i> </button>
+                                            <span class="num">0</span>
+                                            <input class="product_num" name="product_num" value="0" type="hidden">
+                                        </div>
+                    
+                                        <a href="#" class="btn-link add-to-cart"> <i class="icofont-cart"></i>
+                                            أضف الى العربة    
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/edit.js"></script>
+
+    <script type="text/javascript" src="js/cloudzoom.js"></script>
+
+        <script src="js/swiper.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script type = "text/javascript">
+            CloudZoom.quickStart();
+        </script>
+
+</body>
+
+</html>
